@@ -101,6 +101,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
     <Compile Include="Controllers\ValuesControllerTest.cs" />
+    <Compile Include="Services\TicTacToeServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
@@ -109,9 +110,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PersonalWebApi\PersonalWebApi.csproj">
+    <ProjectReference Include="..\PersonalWebApi\PersonalWebApi.Api.csproj">
       <Project>{ACD87E58-2B65-4338-B936-50103405E635}</Project>
-      <Name>PersonalWebApi</Name>
+      <Name>PersonalWebApi.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\PersonalWebApi.Services.csproj">
+      <Project>{8d112cf0-4dc5-424d-9a81-5e7eaf5856c2}</Project>
+      <Name>PersonalWebApi.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

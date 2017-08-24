@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Services.TicTacToe.Models;
+using PersonalWebApi.Services.TicTacToe.Models;
 
-namespace Services.TicTacToe
+namespace PersonalWebApi.Services.TicTacToe
 {
     public class TicTacToeService
     {
         public char? CheckForWin(TicTacToeBoardModel model, int[] inputLocation)
         {
-            char? winner = null;
             bool gameOver = true;
             for (int i = 0; i < model.Grid[inputLocation[0]].Length-1; i++)
             {

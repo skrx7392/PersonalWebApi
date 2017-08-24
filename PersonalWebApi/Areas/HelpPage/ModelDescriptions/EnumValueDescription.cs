@@ -1,4 +1,4 @@
-namespace PersonalWebApi.Areas.HelpPage.ModelDescriptions
+namespace PersonalWebApi.Api.Areas.HelpPage.ModelDescriptions
 {
     public class EnumValueDescription
     {

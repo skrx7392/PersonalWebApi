@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Services.TicTacToe.Models
+namespace PersonalWebApi.Services.TicTacToe.Models
 {
     public enum EState
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
-namespace Services.TicTacToe.Models
+namespace PersonalWebApi.Services.TicTacToe.Models
 {
     public class TicTacToeBoardModel
     {

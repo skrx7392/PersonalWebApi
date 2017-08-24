@@ -1,11 +1,11 @@
 using System.Web.Http;
 using WebActivatorEx;
-using PersonalWebApi;
 using Swashbuckle.Application;
+using PersonalWebApi.Api;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace PersonalWebApi
+namespace PersonalWebApi.Api
 {
     public class SwaggerConfig
     {

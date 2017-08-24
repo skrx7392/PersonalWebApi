@@ -6,7 +6,7 @@ using System.Text;
 using System.Web.Http;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PersonalWebApi;
-using PersonalWebApi.Api.Controllers;
+using PersonalWebApi.Controllers;
 
 namespace PersonalWebApi.Tests.Controllers
 {

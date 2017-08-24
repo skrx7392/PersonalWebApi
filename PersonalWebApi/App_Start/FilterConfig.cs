@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace PersonalWebApi.Api
+namespace PersonalWebApi
 {
     public class FilterConfig
     {

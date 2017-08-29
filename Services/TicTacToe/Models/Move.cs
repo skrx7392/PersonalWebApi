@@ -4,10 +4,9 @@ using System.Text;
 
 namespace PersonalWebApi.Services.TicTacToe.Models
 {
-    public enum EState
+    public class Move
     {
-        Blank='-',
-        X='X',
-        O='O'
+        public int Row { get; set; }
+        public int Column { get; set; }
     }
 }

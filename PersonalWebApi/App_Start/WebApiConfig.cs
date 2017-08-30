@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using Microsoft.Practices.Unity;
+using PersonalWebApi.Services.TicTacToe;
+using PersonalWebApi.Services.TicTacToe.Interfaces;
 
 namespace PersonalWebApi
 {
@@ -19,6 +22,12 @@ namespace PersonalWebApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            var container = new UnityContainer();
+            container.RegisterType<ITicTacToeService, TicTacToeService>(new HierarchicalLifetimeManager());
+
+
+            config.DependencyResolver = new UnityResolver(container);
         }
     }
 }

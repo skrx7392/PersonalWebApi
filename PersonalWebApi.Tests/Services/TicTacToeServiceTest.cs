@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PersonalWebApi.Services.TicTacToe;
+using PersonalWebApi.Services.TicTacToe.Interfaces;
 using PersonalWebApi.Services.TicTacToe.Models;
 
 namespace PersonalWebApi.Tests.Services
@@ -11,7 +12,7 @@ namespace PersonalWebApi.Tests.Services
         [TestMethod]
         public void FindBestMoveTest()
         {
-            TicTacToeService service = new TicTacToeService();
+            ITicTacToeService service = new TicTacToeService();
 
             TicTacToeBoardModel model = new TicTacToeBoardModel()
             {

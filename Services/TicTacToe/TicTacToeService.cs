@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
+using PersonalWebApi.Services.TicTacToe.Interfaces;
 using PersonalWebApi.Services.TicTacToe.Models;
 
 namespace PersonalWebApi.Services.TicTacToe
 {
-    public class TicTacToeService
+    public class TicTacToeService : ITicTacToeService
     {
         private int Evaluate(TicTacToeBoardModel model, Move currentMove)
         {

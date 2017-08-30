@@ -20,7 +20,7 @@ namespace PersonalWebApi.Controllers.ApiControllers
         }
 
         [HttpPost]
-        public TicTacToeBoardModel GetCurrentBoard([FromBody]TicTacToeBoardViewModel viewModel)
+        public TicTacToeBoardModel MakeAiMove([FromBody]TicTacToeBoardViewModel viewModel)
         {
             var model = new TicTacToeBoardModel();
             model.AiState = (EState) viewModel.AiState;

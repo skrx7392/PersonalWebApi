@@ -9,7 +9,9 @@ namespace PersonalWebApi
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.scrollex.min.js",
+                        "~/Scripts/jquery.scrolly.min.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
@@ -22,7 +24,13 @@ namespace PersonalWebApi
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/font-awesome.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
+                "~/Scripts/skel.min.js",
+                "~/Scripts/main.js",
+                "~/Scripts/util.js"));
         }
     }
 }

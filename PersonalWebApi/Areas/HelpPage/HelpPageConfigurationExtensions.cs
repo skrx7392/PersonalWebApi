@@ -13,6 +13,7 @@ using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using PersonalWebApi.Areas.HelpPage.ModelDescriptions;
 using PersonalWebApi.Areas.HelpPage.Models;
+using PersonalWebApi.Areas.HelpPage;
 
 namespace PersonalWebApi.Areas.HelpPage
 {

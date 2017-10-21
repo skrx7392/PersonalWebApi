@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalWebApi", "PersonalWebApi\PersonalWebApi.csproj", "{ACD87E58-2B65-4338-B936-50103405E635}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalWebApi.Api", "PersonalWebApi\PersonalWebApi.Api.csproj", "{ACD87E58-2B65-4338-B936-50103405E635}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalWebApi.Tests", "PersonalWebApi.Tests\PersonalWebApi.Tests.csproj", "{8BB8668C-8630-46DC-888D-3C498599EB7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{8D112CF0-4DC5-424D-9A81-5E7EAF5856C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalWebApi.Services", "Services\PersonalWebApi.Services.csproj", "{8D112CF0-4DC5-424D-9A81-5E7EAF5856C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
